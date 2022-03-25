@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    margin: 200px 300px 100px 600px;
+    display: block;
+}
+.main-box{
+    width: 400px;
+    height: 420px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+}
+.main-box img{
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: hsl(211, 20%, 22%);
+    border-radius: 45px 45px 45px 45px;
+}
+.main-box h1{
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    font-weight: 700;
+}
+.main-box p{
+    font-size: 15px;
+    line-height: 25px;
+    color: hsl(217, 12%, 63%);
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.main-box .buttons{
+    display: flex;
+    justify-content:baseline;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.main-box .rating-btn{
+    margin-left: 20px;
+    border-radius: 100%;
+    background-color: hsl(211, 20%, 22%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.main-box .rating-btn:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.main-box .rating-btn:visited{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.main-box .rating-btn[aria-selected='true']{
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.main-box .a{
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+    width:300px;
+    cursor: pointer;
+}
+.main-box .a:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+@media only screen and (max-width:375px) {
+    body{
+        margin: 200px 5px 100px 5px;
+    }
+    main-box{
+        width: 330px;
+        height: 370;
+    }
+    .main-box h1{
+        margin-left: 20px;
+    }
+    .main-box img{
+        margin-left: 20px;
+    }
+    .main-box p{
+        margin-left: 20px;
+    }
+    .main-box .buttons{
+        margin-left: 20px;
+    }
+    .main-box a{
+        margin-left: 20px;
+        padding: 10px 100px 10px 100px;
+    }
+}
+
+
+
+
+
+
+.main-box-2{
+    width: 420px;
+    height: 420px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+}
+.main-box-2 img{
+    margin-left: 120px;
+    margin-top: 40px;
+}
+.main-box-2 h1{
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    font-weight: 700;
+}
+.main-box-2 p{
+    font-size: 16px;
+    line-height: 25px;
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+.main-box-2 .rating-result{
+    color: hsl(25, 97%, 53%);
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 10px 20px 5px 20px;
+    background-color: hsl(211, 20%, 22%);
+    margin-right: 90px;
+    border-radius: 20px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=0.1">
+        <title>Interaction rating componet-Frontend Mentor by Smilika</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-box" id="main-box">
+            <img src="icon-star.svg" alt="star icon">
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support<br>
+                request. All feedback is appreciated to help us<br>
+                improve our offering!</p>
+            <div class="buttons">
+                <button class="rating-btn" id="1" aria-selected="false" role="button">1</button>
+                <button class="rating-btn" id="2" aria-selected="false" role="button">2</button>
+                <button class="rating-btn" id="3" aria-selected="false" role="button">3</button>
+                <button class="rating-btn" id="4" aria-selected="false" role="button">4</button>
+                <button class="rating-btn" id="5" aria-selected="false" role="button">5</button>
+            </div>
+            <button class="a" id="a">SUBMIT</button>
+        </div>
+         <div hidden class="main-box-2" id="main-box-2">
+            <img src="illustration-thank-you.svg" alt="Thankyou">
+            <p class="rating-result">You selected<span class="selected-rating"> 0</span> out of 5</p>
+            <h1>Thank You</h1>
+            <p align="center">We appreciate you taking the time to give a rating.<br>
+                If you ever need more support, don’t hesitate to<br>
+                get in touch!</p>
+        </div>
+        <script>const btns= document.querySelectAll('[role="button"]');
+            const selectedrating = document.getElementById('selected-rating');
+            const firstpage = document.getElementsById('main-box');
+            const secondpage = document.getElementsById('main-box-2');
+            const submitBtn = document.getElementsById('a');
+            
+            btns.forEach((btn)=>{
+                btn.addEventListener('click',function(e){
+                        let selectedBtn = e.currentTarget;
+                        for (let i = 0; i < btns.length; i++) {
+                            if (btns[i].getAttribute('aria-selected') == 'true') {
+                                btns[i].setAttribute('aria-selected', false);
+                                selectedBtn.setAttribute('aria-selected', true);
+                                selectedrating.textContent = selectedBtn.id;
+                            }
+                            else {
+                                selectedBtn.setAttribute('aria-selected', true);
+                                selectedrating.textContent = selectedBtn.id;
+                            }
+                        }
+                    })
+            })
+            
+            submitBtn.addEventListener('click',function(){
+                firstpage.setAttribute('hidden',true);
+                secondpage.setAttribute('hidden',true);
+            })</script>
+    </body>
+</html>
